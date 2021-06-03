@@ -6,203 +6,464 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Form</title>
+    <title>Covid Tracker</title>
     <!--    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">-->
     <!--    <link rel="stylesheet" href="{{url_for('static',filename='css/dark.css')}}">-->
 
     <link rel="stylesheet" href="static/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
     <!--    <link rel="stylesheet" href="../static/css/dark.css">-->
 
     <!--    <script type="text/javascript" src="{{url_for('static',filename='js/bootstrap.js')}}"></script>-->
     <script type="text/javascript" src="static/js/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/eaf591811e.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="static/js/progressbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 </head>
 
 <body>
-    <div class="body">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12">
-                    <img src="static/images/logo.svg" alt="">
+    <div class="body container-fluid">
+        <div class="row">
+            <div class="col-lg-11">
+                <div class="header row" id="head">
+                    <div class="col-lg-12">
+                        <div class="row logo">
+                            <h2 class="logo_test">Logo</h2>
+                        </div>
+                        <div class="row banner">
+                            <div class="col-lg-2 banner_left">
+                                <a href=""><span>Fork me on <i class="fab fa-github"></i></span></a>
+
+                            </div>
+                            <div class="col-lg-5 banner_mid">
+                                <img src="static/images/banner_bg.png" alt="">
+                            </div>
+                            <div class="col-lg-5 banner_mid">
+                                <div class="banner_mid_right">
+                                    <h2>Hello,<br>I am <span class="hridoy">HRIDOY</span></h2>
+                                    <p>Full Stack Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about row" id="about">
+                    <div class="col-lg-6 about_title d-flex align-items-center justify-content-center">
+                        <h2>ABOUT</h2>
+                    </div>
+                    <div class="col-lg-6 about_content d-flex align-items-center justify-content-center">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium earum rem ea dicta,
+                            quis mollitia fugit corporis accusamus voluptates inventore voluptas blanditiis suscipit
+                            nihil ipsam, quam repudiandae ratione enim ut exercitationem harum! Laboriosam, nulla. Quia
+                            minima iste maiores iusto eos vel incidunt ex nobis unde ratione. Cumque distinctio sit
+                            eligendi dolores voluptate excepturi eos odit reiciendis iusto iure rem laborum, harum non
+                            quisquam illum debitis. Beatae animi voluptas similique unde et fugit deleniti praesentium
+                            incidunt autem officiis maiores maxime recusandae velit dolore ipsa asperiores placeat ea
+                            minus repellat porro repellendus, impedit ad eius! Voluptas accusamus delectus debitis
+                            ratione? Recusandae, consequuntur.</p>
+                    </div>
+                </div>
+
+                <div class="skills row" id="skills">
+                    <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                        <h2 class="skill-text mt-3">SKILLS</h2>
+                    </div>
+                    <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                        <div class="container inner">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1">
+                                    <br><br><br>
+                                    <div class="row text-center">
+                                        <div class="col-lg-3">
+                                            <div class="progressbar circle blue" data-value="75"></div>
+                                            <h5>HTML and CSS</h5>
+                                            <p>Frontend Technology like HTML5, CSS3 and Bootstrap</p>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="progressbar circle green" data-value="80"></div>
+                                            <h5>Python</h5>
+                                            <p>Core Python, Flask, Django, Scikit Learn, Machine Learning</p>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="progressbar circle red" data-value="90"></div>
+                                            <h5>Office Suit</h5>
+                                            <p>Microsoft Word, Excel, Powerpoint</p>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="progressbar circle yellow" data-value="80"></div>
+                                            <h5>Hardware</h5>
+                                            <p>Computer Peripherals</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <p class="">Java</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                            <p class="">Java</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                            <p class="">Java</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="">Java</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                            <p class="">Java</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                            <p class="">Java</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work row" id="work">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-2 work-element work-img">
+                                <img class="img-fluid"
+                                    src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/121048239/original/abf803aab2006755a639e096ed313df84984908e/make-u-a-photography-portfolio-to-showcase-your-work.jpg"
+                                    alt="">
+                                <div class="sh-portfolio-fancy-item-overlay">
+                                    <div class="sh-portfolio-fancy-item-overlay-container">
+                                        <a href="https://jevelin.shufflehound.com/portfolio-full-width/project/runners/"
+                                            class="sh-portfolio-fancy-item-overlay-title">
+                                            <a href="" class="btn btn-outline-light">Visit</a>
+                                        </a>
+
+
+                                        <div class="sh-portfolio-fancy-item-overlay-categories">
+                                            <a href=""><i class="fab fa-github"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 work-element work-text">
+                                <h3>Title Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.</p>
+                            </div>
+                            <div class="col-lg-2 work-element work-img">
+                                <img class="img-fluid"
+                                    src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/121048239/original/abf803aab2006755a639e096ed313df84984908e/make-u-a-photography-portfolio-to-showcase-your-work.jpg"
+                                    alt="">
+                                <div class="sh-portfolio-fancy-item-overlay">
+                                    <div class="sh-portfolio-fancy-item-overlay-container">
+                                        <a href="https://jevelin.shufflehound.com/portfolio-full-width/project/runners/"
+                                            class="sh-portfolio-fancy-item-overlay-title">
+                                            <a href="" class="btn btn-outline-light">Visit</a>
+                                        </a>
+
+
+                                        <div class="sh-portfolio-fancy-item-overlay-categories">
+                                            <a href=""><i class="fab fa-github"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 work-element work-text">
+                                <h3>Title Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.</p>
+                            </div>
+                            <div class="col-lg-2 work-element work-img">
+                                <img class="img-fluid"
+                                    src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/121048239/original/abf803aab2006755a639e096ed313df84984908e/make-u-a-photography-portfolio-to-showcase-your-work.jpg"
+                                    alt="">
+                                <div class="sh-portfolio-fancy-item-overlay">
+                                    <div class="sh-portfolio-fancy-item-overlay-container">
+                                        <a href="https://jevelin.shufflehound.com/portfolio-full-width/project/runners/"
+                                            class="sh-portfolio-fancy-item-overlay-title">
+                                            <a href="" class="btn btn-outline-light">Visit</a>
+                                        </a>
+
+
+                                        <div class="sh-portfolio-fancy-item-overlay-categories">
+                                            <a href=""><i class="fab fa-github"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 work-element work-text">
+                                <h3>Title Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 work-element work-text">
+                                <h3>Title Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.</p>
+                            </div>
+                            <div class="col-lg-2 work-element work-img">
+                                <img class="img-fluid"
+                                    src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/121048239/original/abf803aab2006755a639e096ed313df84984908e/make-u-a-photography-portfolio-to-showcase-your-work.jpg"
+                                    alt="">
+                                <div class="sh-portfolio-fancy-item-overlay">
+                                    <div class="sh-portfolio-fancy-item-overlay-container">
+                                        <a href="https://jevelin.shufflehound.com/portfolio-full-width/project/runners/"
+                                            class="sh-portfolio-fancy-item-overlay-title">
+                                            <a href="" class="btn btn-outline-light">Visit</a>
+                                        </a>
+
+
+                                        <div class="sh-portfolio-fancy-item-overlay-categories">
+                                            <a href=""><i class="fab fa-github"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 work-element work-text">
+                                <h3>Title Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.</p>
+                            </div>
+                            <div class="col-lg-2 work-element work-img">
+                                <img class="img-fluid"
+                                    src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/121048239/original/abf803aab2006755a639e096ed313df84984908e/make-u-a-photography-portfolio-to-showcase-your-work.jpg"
+                                    alt="">
+                                <div class="sh-portfolio-fancy-item-overlay">
+                                    <div class="sh-portfolio-fancy-item-overlay-container">
+                                        <a href="https://jevelin.shufflehound.com/portfolio-full-width/project/runners/"
+                                            class="sh-portfolio-fancy-item-overlay-title">
+                                            <a href="" class="btn btn-outline-light">Visit</a>
+                                        </a>
+
+
+                                        <div class="sh-portfolio-fancy-item-overlay-categories">
+                                            <a href=""><i class="fab fa-github"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 work-element work-text">
+                                <h3>Title Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.</p>
+                            </div>
+                            <div class="col-lg-2 work-element work-img">
+                                <img class="img-fluid"
+                                    src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/121048239/original/abf803aab2006755a639e096ed313df84984908e/make-u-a-photography-portfolio-to-showcase-your-work.jpg"
+                                    alt="">
+                                <div class="sh-portfolio-fancy-item-overlay">
+                                    <div class="sh-portfolio-fancy-item-overlay-container">
+                                        <a href="https://jevelin.shufflehound.com/portfolio-full-width/project/runners/"
+                                            class="sh-portfolio-fancy-item-overlay-title">
+                                            <a href="" class="btn btn-outline-light">Visit</a>
+                                        </a>
+
+
+                                        <div class="sh-portfolio-fancy-item-overlay-categories">
+                                            <a href=""><i class="fab fa-github"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 work-element work-img">
+                                <img class="img-fluid"
+                                    src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/121048239/original/abf803aab2006755a639e096ed313df84984908e/make-u-a-photography-portfolio-to-showcase-your-work.jpg"
+                                    alt="">
+                                <div class="sh-portfolio-fancy-item-overlay">
+                                    <div class="sh-portfolio-fancy-item-overlay-container">
+                                        <a href="https://jevelin.shufflehound.com/portfolio-full-width/project/runners/"
+                                            class="sh-portfolio-fancy-item-overlay-title">
+                                            <a href="" class="btn btn-outline-light">Visit</a>
+                                        </a>
+
+
+                                        <div class="sh-portfolio-fancy-item-overlay-categories">
+                                            <a href=""><i class="fab fa-github"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 work-element work-text">
+                                <h3>Title Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.</p>
+                            </div>
+                            <div class="col-lg-2 work-element work-img">
+                                <img class="img-fluid"
+                                    src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/121048239/original/abf803aab2006755a639e096ed313df84984908e/make-u-a-photography-portfolio-to-showcase-your-work.jpg"
+                                    alt="">
+                                <div class="sh-portfolio-fancy-item-overlay">
+                                    <div class="sh-portfolio-fancy-item-overlay-container">
+                                        <a href="https://jevelin.shufflehound.com/portfolio-full-width/project/runners/"
+                                            class="sh-portfolio-fancy-item-overlay-title">
+                                            <a href="" class="btn btn-outline-light">Visit</a>
+                                        </a>
+
+
+                                        <div class="sh-portfolio-fancy-item-overlay-categories">
+                                            <a href=""><i class="fab fa-github"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 work-element work-text">
+                                <h3>Title Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.</p>
+                            </div>
+                            <div class="col-lg-2 work-element work-img">
+                                <img class="img-fluid"
+                                    src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/121048239/original/abf803aab2006755a639e096ed313df84984908e/make-u-a-photography-portfolio-to-showcase-your-work.jpg"
+                                    alt="">
+                                <div class="sh-portfolio-fancy-item-overlay">
+                                    <div class="sh-portfolio-fancy-item-overlay-container">
+                                        <a href="https://jevelin.shufflehound.com/portfolio-full-width/project/runners/"
+                                            class="sh-portfolio-fancy-item-overlay-title">
+                                            <a href="" class="btn btn-outline-light">Visit</a>
+                                        </a>
+
+
+                                        <div class="sh-portfolio-fancy-item-overlay-categories">
+                                            <a href=""><i class="fab fa-github"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 work-element work-text">
+                                <h3>Title Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, at.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv row" id="cv">
+                    <div class="col-lg-12">
+
+                    </div>
+                </div>
+
+                <div class="contact row" id="contact">
+                    <div class="col-lg-12">
+
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 hide">
-                    <img class="img-fluid" src="static/images/login_page_mg.svg" alt="">
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="login" id="login">
-                        <h2 class="text-center fw-bold">Login</h2>
-                        <form action="/" method="post">
-                            <div class="mb-3">
-                                <div class="input_icons row">
-                                    <div class="col-1">
-                                        <label for="exampleInputEmail1" class="form-label"><i
-                                                class="fa fa-envelope icon_field">
-                                            </i></label>
-                                    </div>
-                                    <div class="col-11">
-                                        <input type="email" class="form-control input-field" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="example@email.com">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="input_icons row">
-                                    <div class="col-1">
-                                        <label for="exampleInputPassword1" class="form-label"><i
-                                                class="fa fa-key icon_field">
-                                            </i></label>
-                                    </div>
-                                    <div class="col-11">
-                                        <input type="password" class="form-control input-field"
-                                            id="exampleInputPassword1" placeholder="********">
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="mb-3 form-check my-3">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Keep me Logged In</label>
-                                <a href="#" class="link float-end" onclick="forget()">Forget Password</a>
-                            </div>
-                            <button type="submit" class="btn btn-primary-login mb-3">LOGIN</button>
-                        </form>
-                        <a href="#" class="link" id="reg" onclick="reg()">Registration</a>
-                    </div>
+            <!-- ScrollTop Button -->
+            <a href="#head" id="top" class="d-flex align-items-center justify-content-center"><i
+                    class="fas fa-arrow-up"></i></a>
 
-                </div>
+
+            <!-- Menu Section -->
+            <div class="col-lg-1 banner_right">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
             </div>
         </div>
+
     </div>
-    <script>
-        function reg() {
-            document.getElementById("login").innerHTML = `<div class="login" id="regis">
-                        <h2 class="text-center fw-bold">Registration</h2>
-                        <form action="/" method="post">
-                            <div class="mb-3">
-                                <div class="input_icons row">
-                                    <div class="col-1">
-                                        <label for="exampleInputUser1" class="form-label"><i
-                                                class="fa fa-user icon_field">
-                                            </i></label>
-                                    </div>
-                                    <div class="col-11">
-                                        <input type="text" class="form-control input-field" id="exampleInputUser1"
-                                             placeholder="Full Name">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="input_icons row">
-                                    <div class="col-1">
-                                        <label for="exampleInputEmail1" class="form-label"><i
-                                                class="fa fa-envelope icon_field">
-                                            </i></label>
-                                    </div>
-                                    <div class="col-11">
-                                        <input type="email" class="form-control input-field" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="example@email.com">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="input_icons row">
-                                    <div class="col-1">
-                                        <label for="exampleInputPassword1" class="form-label"><i
-                                                class="fa fa-key icon_field">
-                                            </i></label>
-                                    </div>
-                                    <div class="col-11">
-                                        <input type="password" class="form-control input-field"
-                                            id="exampleInputPassword1" placeholder="********">
-                                    </div>
-                                </div>
-                            </div>
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+<script>
 
-                            <button type="submit" class="btn btn-primary-login mb-3">SIGN UP</button>
-                        </form>
-                        <a href="#" class="link" id="login" onclick="login()">Login</a>
-                    </div>`;
-        }
-        function login(){
-            document.getElementById("regis").innerHTML = `<div class="login" id="login">
-                        <h2 class="text-center fw-bold">Login</h2>
-                        <form action="/" method="post">
-                            <div class="mb-3">
-                                <div class="input_icons row">
-                                    <div class="col-1">
-                                        <label for="exampleInputEmail1" class="form-label"><i
-                                                class="fa fa-envelope icon_field">
-                                            </i></label>
-                                    </div>
-                                    <div class="col-11">
-                                        <input type="email" class="form-control input-field" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="example@email.com">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="input_icons row">
-                                    <div class="col-1">
-                                        <label for="exampleInputPassword1" class="form-label"><i
-                                                class="fa fa-key icon_field">
-                                            </i></label>
-                                    </div>
-                                    <div class="col-11">
-                                        <input type="password" class="form-control input-field"
-                                            id="exampleInputPassword1" placeholder="********">
-                                    </div>
-                                </div>
-                            </div>
+    $(document).ready(function () {
+        'use strict';
 
-                            <div class="mb-3 form-check my-3">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Keep me Logged In</label>
-                                <a href="#" class="link float-end" onclick="forget()">Forget Password</a>
-                            </div>
-                            <button type="submit" class="btn btn-primary-login mb-3">LOGIN</button>
-                        </form>
-                        <a href="#" class="link" id="reg" onclick="reg()">Registration</a>
-                    </div>`;
-        }
-        function forget(){
-            document.getElementById("login").innerHTML = `<div class="login" id="regis">
-                        <h2 class="text-center fw-bold">Forget Password</h2>
-                        <p class="text-center">Enter Your E-Mail</p>
-                        <form action="/" method="post">
-                            <div class="mb-3">
-                                <div class="input_icons row">
-                                    <div class="col-1">
-                                        <label for="exampleInputEmail1" class="form-label"><i
-                                                class="fa fa-envelope icon_field">
-                                            </i></label>
-                                    </div>
-                                    <div class="col-11">
-                                        <input type="email" class="form-control input-field" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="example@email.com">
-                                    </div>
-                                </div>
-                            </div>
-                            
 
-                            <button type="submit" class="btn btn-primary-login mb-3">RECOVER PASSWORD</button>
-                        </form>
-                        <a href="#" class="link" id="login" onclick="login()">Login</a>
-                    </div>`;
-        }
-
-        const chk = document.getElementById('chk');
-
-        chk.addEventListener('change', () => {
-            document.body.classList.toggle('light');
+        var $pline = $('.progressbar.line');
+        var $pcircle = $('.progressbar.circle');
+        $pline.each(function (i) {
+            var line = new ProgressBar.Line(this, {
+                strokeWidth: 6,
+                trailWidth: 6,
+                duration: 3000,
+                easing: 'easeInOut',
+                text: {
+                    style: {
+                        color: 'inherit',
+                        position: 'absolute',
+                        right: '0',
+                        top: '-30px',
+                        padding: 0,
+                        margin: 0,
+                        transform: null
+                    },
+                    autoStyleContainer: false
+                },
+                step: function (state, line, attachment) {
+                    line.setText(Math.round(line.value() * 100) + ' %');
+                }
+            });
+            var value = ($(this).attr('data-value') / 100);
+            $pline.waypoint(function () {
+                line.animate(value);
+            }, {
+                offset: "100%"
+            })
+        });
+        $pcircle.each(function (i) {
+            var circle = new ProgressBar.SemiCircle(this, {
+                strokeWidth: 5,
+                trailWidth: 5,
+                duration: 2000,
+                easing: 'easeInOut',
+                step: function (state, circle, attachment) {
+                    circle.setText(Math.round(circle.value() * 100));
+                }
+            });
+            var value = ($(this).attr('data-value') / 100);
+            $pcircle.waypoint(function () {
+                circle.animate(value);
+            }, {
+                offset: "100%"
+            })
         });
 
-    </script>
-</body>
+        $('.counter .value').counterUp({
+            delay: 50,
+            time: 1000
+        });
+
+        // $(".countdown").countdown();
+
+
+    });
+
+
+
+</script>
 
 </html>

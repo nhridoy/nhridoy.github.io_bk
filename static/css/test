@@ -1,0 +1,56 @@
+
+.logo{
+  text-align: center;
+  background-color: cyan;
+  height: 7vh;
+}
+.banner{
+  width: 100%;
+  height: calc(100vh - 7vh);
+}
+.logo{
+  top: 0;
+  /* position: sticky; */
+  background-color: cyan;
+  overflow: hidden;
+  text-align: center;
+  height: 7vh;
+}
+.banner_left>span{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.banner_left>span>i{
+  transform: rotate(90deg);
+}
+
+.banner_left{
+  background-color: brown;
+}
+.banner_mid{
+  background-color: cadetblue;
+}
+.banner_mid>img{
+  height: 100%;
+}
+.banner_right{
+  background-color: chocolate;
+}
+.banner_mid_right{
+  /* font-size: 5rem; */
+  /* margin: 50% auto; */
+  /* float: right; */
+  /* text-align: end; */
+  /* overflow: hidden; */
+  margin-top: 50%;
+  margin-bottom: 50%;
+  margin-left: 50%;
+}
+.banner_mid>p{
+  /* font-size: 5rem; */
+  /* margin: 50% auto; */
+  float: right;
+  /* text-align: end; */
+  overflow: hidden;
+}
